@@ -307,6 +307,21 @@ body {
     gap: 30px;
 }
 
+/* About Page Dividers */
+.about-divider {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 188, 0, 0.1);
+}
+
+.about-divider .section-title {
+    margin-top: 0;
+}
+
+.about-section + .about-divider {
+    margin-top: 24px;
+}
+
 /* Resume Section */
 .resume-section {
     margin-top: 60px;
