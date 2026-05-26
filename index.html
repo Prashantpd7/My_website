@@ -9,8 +9,9 @@
 <body>
     <div class="hero-container">
         <div class="hero-content">
-            <h1 class="hero-title">I'm</h1>
-            <h2 class="hero-subtitle">Prashant</h2>
+            <div class="typing-wrapper">
+                <h1 class="hero-title typing-text" id="typingText"></h1>
+            </div>
 
             <div class="buttons-grid">
                 <a href="about.html" class="nav-button">About me</a>
@@ -20,5 +21,38 @@
             </div>
         </div>
     </div>
+
+    <script>
+        const typingText = document.getElementById('typingText');
+        const fullText = 'Hii, I am Prashant Dwivedi';
+        const typingSpeed = 100;
+        const pauseTime = 3500;
+        let index = 0;
+        let isDeleting = false;
+
+        function type() {
+            if (!isDeleting) {
+                if (index < fullText.length) {
+                    typingText.textContent += fullText.charAt(index);
+                    index++;
+                    setTimeout(type, typingSpeed);
+                } else {
+                    isDeleting = true;
+                    setTimeout(type, pauseTime);
+                }
+            } else {
+                if (index > 0) {
+                    typingText.textContent = fullText.substring(0, index - 1);
+                    index--;
+                    setTimeout(type, typingSpeed);
+                } else {
+                    isDeleting = false;
+                    setTimeout(type, typingSpeed);
+                }
+            }
+        }
+
+        type();
+    </script>
 </body>
 </html>
