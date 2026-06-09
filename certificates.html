@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates | Prashant Dwivedi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- Certificate Popup -->
+<div id="certificateModal" class="certificate-modal">
+    <span class="close-modal" onclick="closeCertificate()">&times;</span>
+    <img id="modalImage" class="modal-image">
+</div>
+
+<script>
+function openCertificate(imageSrc) {
+    document.getElementById("certificateModal").style.display = "flex";
+    document.getElementById("modalImage").src = imageSrc;
+    document.body.style.overflow = "hidden";
+}
+
+function closeCertificate() {
+    document.getElementById("certificateModal").style.display = "none";
+    document.body.style.overflow = "auto";
+}
+
+window.onclick = function(event) {
+    const modal = document.getElementById("certificateModal");
+    if (event.target === modal) {
+        closeCertificate();
+    }
+}
+</script>
+<body>
+
+<div class="header">
+    <a href="about.html" class="back-button">Back</a>
+
+  <div class="social-buttons">
+    <a href="mailto:hello.prashantdwivedi@gmail.com" class="social-button">
+        Email
+    </a>
+
+    <a href="https://github.com/Prashantpd7"
+       class="social-button"
+       target="_blank">
+       GitHub
+    </a>
+
+    <a href="https://www.linkedin.com/in/prashantpd7"
+       class="social-button"
+       target="_blank">
+       LinkedIn
+    </a>
+</div>
+</div>
+
+<div class="content-box">
+
+    <h1 class="page-title">Certificates</h1>
+
+    <div class="about-divider">
+        <h2 class="section-title">ACHIEVEMENTS</h2>
+
+        <div class="certificate-grid">
+
+            <div class="certificate-card">
+                    <img src="Gallery/gdg-new-delhi-vibe-check-dev-edition-2026.png" class="certificate-image" 
+                    onclick="openCertificate(this.src)">
+                <h3>GDG Vibe Check: Dev Edition</h3>
+                <p>Participation certificate from Google Developer Groups New Delhi.</p>
+            </div>
+
+            <div class="certificate-card">
+                    <img src="Gallery/hackfest-2026-participation.png" class="certificate-image"
+                    onclick="openCertificate(this.src)">
+                <h3>HackFest 2026</h3>
+                <p>Hackathon participation and product building competition.</p>
+            </div>
+
+            <div class="certificate-card">
+                    <img src="Gallery/innovate-nsut-2026-hackathon-participation.png" class="certificate-image"
+                    onclick="openCertificate(this.src)">
+                <h3>Innovate NSUT 2026</h3>
+                <p>Participated in the InnovateNSUT hackathon organized at NSUT Delhi.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="about-divider">
+        <h2 class="section-title">WORKSHOPS & CERTIFICATIONS</h2>
+
+        <div class="certificate-grid">
+
+            <div class="certificate-card">
+                    <img src="Gallery/iit-kanpur-ai-productization-workshop-2024.png" class="certificate-image"
+                    onclick="openCertificate(this.src)">
+                <h3>AI Productization Workshop</h3>
+                <p>IIT Kanpur workshop focused on transforming AI concepts into products.</p>
+            </div>
+
+            <div class="certificate-card">
+                    <img src="Gallery/nielit-cyber-security-awareness-2025.png" class="certificate-image"
+                    onclick="openCertificate(this.src)">
+                <h3>Cyber Security Awareness</h3>
+                <p>Completed cybersecurity awareness and best practices program.</p>
+            </div>
+
+            <div class="certificate-card">
+                    <img src="Gallery/national-financial-literacy-quiz-2026.png" class="certificate-image"
+                    onclick="openCertificate(this.src)">
+                <h3>Financial Literacy Quiz</h3>
+                <p>National level financial literacy assessment and certification.</p>
+            </div>
+
+            <div class="certificate-card">
+                    <img src="Gallery/podar-hackfest-achievement-2026.png" class="certificate-image"
+                    onclick="openCertificate(this.src)">
+                <h3>Podar Hackfest</h3>
+                <p>Achievement certificate for participation and innovation activities.</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
