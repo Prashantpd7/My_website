@@ -31,9 +31,414 @@
     <div class="container">
         <div class="content-box">
             <h1 class="page-title">Preecode</h1>
-            <h3>AI-powered coding practice and skill-building platform directly inside VS Code.</h3>
-            <h3 class="section-title">18|04|2026</h3>
-            <p>Content yet to upload....</p>
+
+            <p class="project-subtitle">
+            AI-powered coding practice and skill-building platform built directly inside Visual Studio Code.
+            </p>
+
+            <div class="about-divider">
+                <a href="https://youtu.be/ECKcCTc-A3k"
+                target="_blank"
+                class="resume-button">
+                Watch Demo Video
+                </a>
+
+                <a href="https://github.com/Prashantpd7/Preecode"
+                target="_blank"
+                class="resume-button">
+                GitHub Repository
+                </a>
+            </div>
+
+            <div class="about-divider">
+                <h2 class="section-title">THE PROBLEM</h2>
+
+                <p>
+                    Most beginners start their coding journey inside Visual Studio Code,
+                    but learning effectively is much harder than simply writing code.
+                </p><br>
+
+                <p>
+                    Students constantly switch between platforms such as LeetCode,
+                    HackerRank, GeeksforGeeks, YouTube, ChatGPT, and documentation websites.
+                    Finding the right questions, understanding weak concepts, debugging
+                    errors, and tracking learning progress becomes overwhelming.
+                </p><br>
+
+                <p>
+                    Instead of focusing on learning, beginners often spend more time
+                    searching for resources than actually solving problems.
+                </p><br>
+
+                <p>
+                    The result is a fragmented learning experience where students struggle
+                    to identify weaknesses, practice consistently, and improve with
+                    confidence.
+                </p>
+            </div>
+
+            <div class="about-divider">
+                <h2 class="section-title">OUR SOLUTION</h2>
+
+                <p>
+                    Preecode was created to solve this problem.
+                </p>
+
+                <p>
+                    Preecode is an AI-powered coding companion that works directly inside
+                    Visual Studio Code. It combines personalized coding practice,
+                    AI tutoring, debugging assistance, code review, and memory-driven
+                    learning into a single environment.
+                </p><br>
+
+                <p>
+                    Instead of forcing learners to switch between multiple platforms,
+                    Preecode brings everything into the editor where coding actually
+                    happens.
+                </p><br>
+
+                <p>
+                    The goal is simple:
+                </p>
+
+                <p>
+                    <strong>
+                    Help learners spend less time searching and more time learning.
+                    </strong>
+                </p>
+            </div>
+
+            <div class="about-divider">
+                <h2 class="section-title">KEY FEATURES</h2>
+
+                <h3>Personalized Question Generation</h3>
+                <p>
+                    Generates coding questions based on learner progress, weak areas,
+                    and historical performance.
+                </p><br>
+
+                <h3>AI Coding Assistant</h3>
+                <p>
+                    Ask coding questions, understand concepts, debug errors,
+                    receive guidance, and learn directly inside VS Code.
+                </p><br>
+
+                <h3>Explain Question</h3>
+                <p>
+                    Breaks complex coding questions into beginner-friendly explanations.
+                </p><br>
+
+                <h3>Intelligent Hints</h3>
+                <p>
+                    Provides guided hints instead of immediately revealing answers.
+                </p><br>
+
+                <h3>Solution Generation</h3>
+                <p>
+                    Generates complete solutions whenever learners need support.
+                </p><br>
+
+                <h3>Different Approaches</h3>
+                <p>
+                    Shows multiple valid approaches for the same problem to improve
+                    problem-solving ability.
+                </p><br>
+
+                <h3>Explain Solution</h3>
+                <p>
+                    Explains generated solutions line by line for deeper understanding.
+                </p><br>
+
+                <h3>Code Evaluation</h3>
+
+                <ul class="focus-list">
+                    <li>Correctness</li>
+                    <li>Readability</li>
+                    <li>Complexity Analysis</li>
+                    <li>Performance</li>
+                    <li>Edge Case Handling</li>
+                </ul><br>
+
+                <h3>Explain Selection</h3>
+                <p>
+                    Highlight any code block and instantly receive contextual
+                    explanations.
+                </p><br>
+
+                <h3>Debug Code</h3>
+                <p>
+                    Detects possible issues and helps identify the root cause.
+                </p><br>
+
+                <h3>Fix Code</h3>
+                <p>
+                    Generates corrected implementations and explains mistakes.
+                </p><br>
+
+                <h3>Code Review</h3>
+
+                <ul class="focus-list">
+                    <li>Potential Bugs</li>
+                    <li>Performance Issues</li>
+                    <li>Maintainability</li>
+                    <li>Readability</li>
+                    <li>Best Practices</li>
+                </ul>
+
+                <h3>Timer System</h3>
+                <p>
+                    Tracks how long users take to solve coding problems.
+                </p><br>
+
+                <h3>Save Questions</h3>
+                <p>
+                    Builds a long-term learning history for future personalization.
+                </p>
+            </div>
+
+            <div class="about-divider">
+                <h2 class="section-title">HINDSIGHT MEMORY</h2>
+
+                <p>
+                    One of the most important innovations behind Preecode is
+                    <strong>Hindsight Memory.</strong>
+                </p>
+
+                <p>
+                    Unlike traditional coding assistants that only understand the current
+                    conversation, Preecode continuously builds a personalized learning
+                    profile for every user.
+                </p><br>
+
+                <p>Hindsight Memory stores:</p><br>
+
+                <ul class="focus-list">
+                    <li>Solved Questions</li>
+                    <li>Coding Performance</li>
+                    <li>Evaluation Results</li>
+                    <li>Debugging History</li>
+                    <li>Time Spent Solving Problems</li>
+                    <li>AI Interactions</li>
+                    <li>Learning Preferences</li>
+                    <li>Problem-Solving Patterns</li>
+                </ul>
+
+                <p>
+                    Every interaction helps the platform become smarter and more helpful
+                    for that specific learner.
+                </p>
+            </div>
+            <div class="about-divider">
+                <h2 class="section-title">ARCHITECTURE OVERVIEW</h2>
+
+                <p>
+                    Precode consists of two primary components that work together to
+                    create a complete learning ecosystem.
+                </p><br>
+
+                <h3>VS Code Extension</h3><br>
+
+                <p>
+                    The extension serves as the learner's primary workspace.
+                </p>
+
+                <ul class="focus-list">
+                    <li>AI Assistant</li>
+                    <li>Question Generation</li>
+                    <li>Debugging Tools</li>
+                    <li>Code Evaluation</li>
+                    <li>Code Review</li>
+                    <li>Learning Support</li>
+                </ul>
+
+                <p>
+                    All directly inside Visual Studio Code.
+                </p><br>
+
+                <h3>Web Platform</h3><br>
+
+                <p>
+                    The web platform provides:
+                </p>
+
+                <ul class="focus-list">
+                    <li>Learning Dashboard</li>
+                    <li>Saved Questions</li>
+                    <li>Progress Tracking</li>
+                    <li>Hindsight Memory Visualization</li>
+                    <li>Historical Activity Management</li>
+                </ul>
+
+                <p>
+                    Together, these systems create a seamless learning experience.
+                </p>
+            </div>
+
+            <div class="about-divider">
+                <h2 class="section-title">DEMO</h2>
+
+                <p>
+                    Watch the complete project demonstration:
+                </p>
+
+                <p>
+                    <a href="https://youtu.be/ECKcCTc-A3k"
+                    target="_blank"
+                    class="project-link-btn">
+                    ▶ Watch Full Demo
+                    </a>
+                </p>
+
+                <p>
+                    The demo showcases question generation, AI assistance,
+                    debugging tools, code evaluation, Hindsight Memory,
+                    and the overall learner workflow.
+                </p>
+
+                <!-- Optional -->
+                <!-- Add Screenshot Here -->
+                <!-- Add YouTube Thumbnail Here -->
+            </div>
+
+            <div class="about-divider">
+                <h2 class="section-title">HACKATHON JOURNEY</h2>
+
+                <p>
+                    Preecode was developed and presented during a hackathon where the
+                    project received recognition for its approach toward personalized
+                    coding education.
+                </p><br>
+
+                <p>
+                    The project demonstrated how AI, memory systems, and developer tools
+                    can be combined to create a smarter and more effective learning
+                    environment for beginners.
+                </p><br>
+
+                <p>
+                    From identifying the learning challenges faced by students to building
+                    a complete AI-powered solution inside Visual Studio Code, the journey
+                    involved rapid prototyping, continuous iteration, user-focused design,
+                    and technical experimentation.
+                </p><br>
+
+                <p>
+                    The experience reinforced the belief that education can become more
+                    personalized, adaptive, and accessible through AI.
+                </p><br>
+
+                <!-- Add Team Photo -->
+                <!-- Add Presentation Photo -->
+                <!-- Add Winner Certificate -->
+                <!-- Add Event Photos -->
+            </div>
+
+            <div class="about-divider">
+                <h2 class="section-title">COMMUNITY & RECOGNITION</h2>
+
+                <p>
+                    The project was shared with developers, mentors, students,
+                    and professionals across the technology community.
+                </p><br>
+
+                <p>
+                    Feedback from the community helped validate the idea and provided
+                    valuable insights for future improvements.
+                </p><br>
+
+                <ul class="focus-list">
+                    <li>Hackathon Recognition</li>
+                    <li>Mentor Feedback</li>
+                    <li>Developer Community Support</li>
+                    <li>Product Discussions</li>
+                    <li>Technical Reviews</li>
+                </ul>
+
+                <p>
+                    Community engagement continues to play an important role in shaping
+                    the future direction of the project.
+                </p>
+
+                <!-- LinkedIn Post Links -->
+                <!-- Community Screenshots -->
+                <!-- Reactions -->
+            </div>
+
+            <div class="about-divider">
+                <h2 class="section-title">OPEN SOURCE</h2>
+
+                <p>
+                    Preecode is open source.
+                </p><br>
+
+                <p>
+                    Contributions, feedback, feature suggestions, bug reports,
+                    and community involvement are always welcome.
+                </p><br>
+
+                <p>
+                    Repository:
+                </p>
+
+                <p>
+                    <a href="https://github.com/Prashantpd7/Preecode"
+                    target="_blank"
+                    class="project-link-btn">
+                    View GitHub Repository →
+                    </a>
+                </p>
+            </div>
+
+            <div class="about-divider">
+                <h2 class="section-title">FUTURE ROADMAP</h2>
+
+                <ul class="focus-list">
+                    <li>Advanced Learning Analytics</li>
+                    <li>Improved Memory Systems</li>
+                    <li>Multi-Language Support</li>
+                    <li>Personalized Learning Paths</li>
+                    <li>Interview Preparation Mode</li>
+                    <li>Collaborative Learning Features</li>
+                    <li>Adaptive Difficulty Adjustment</li>
+                    <li>Enhanced AI Agents</li>
+                </ul>
+
+                <p>
+                    The long-term goal is to evolve Precode into a complete AI learning
+                    ecosystem that continuously adapts to each learner's needs.
+                </p>
+            </div>
+
+            <div class="about-divider">
+                <h2 class="section-title">FINAL THOUGHTS</h2>
+
+                <p>
+                    Learning to code should not require juggling multiple tools,
+                    platforms, websites, and resources.
+                </p><br>
+
+                <p>
+                    Precode brings practice, learning, debugging, code review,
+                    AI assistance, and personalized guidance into a single environment.
+                </p><br>
+
+                <p>
+                    Powered by Hindsight Memory, the platform learns alongside users and
+                    adapts over time to provide increasingly relevant support.
+                </p><br>
+
+                <p>
+                    The vision is simple:
+                </p>
+
+                <p>
+                    <strong>
+                    Build a coding companion that grows with every learner and helps
+                    developers become better problem-solvers through continuous,
+                    personalized support.
+                    </strong>
+                </p>
+            </div>
         </div>
     </div>
 </body>
